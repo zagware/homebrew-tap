@@ -6,10 +6,10 @@ class EngTeamReporter < Formula
 
   if Hardware::CPU.arm?
     url "https://github.com/zagware/eng-team-reporter-dist/releases/download/v#{version}/eng-team-reporter-#{version}-macos-arm64.tar.gz"
-    sha256 "a3159cea4e807dee246dacce5ed360c00ce7854f9aa03b9517fb800b72e37500"
+    sha256 "b6560198994d8c0be682c1c105ada61b192badc4148bc15dcc33c9c93c62aab3"
   else
     url "https://github.com/zagware/eng-team-reporter-dist/releases/download/v#{version}/eng-team-reporter-#{version}-macos-x64.tar.gz"
-    sha256 "0e7ae1bb8dc51c50e04de55c2de5f33f8fdfe0d7ec82727dc962fc9c09bae9c8"
+    sha256 "a08e76e7fbea4adaa227e3722795bee0ad81f8665d6498337a7c2132b7301dd7"
   end
 
   def install
