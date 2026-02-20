@@ -5,11 +5,11 @@ class EngTeamReporter < Formula
   license :cannot_represent
 
   if Hardware::CPU.arm?
-    url "https://github.com/zagware/eng-team-reporter/releases/download/v#{version}/eng-team-reporter-#{version}-macos-arm64.tar.gz"
-    sha256 "f25ca51cd4172047220f4ed90766763c7422e25cb65e7f4f866c414e27db6570"
+    url "https://github.com/zagware/eng-team-reporter-dist/releases/download/v#{version}/eng-team-reporter-#{version}-macos-arm64.tar.gz"
+    sha256 "PLACEHOLDER_ARM64_SHA256"
   else
-    url "https://github.com/zagware/eng-team-reporter/releases/download/v#{version}/eng-team-reporter-#{version}-macos-x64.tar.gz"
-    sha256 "7d95a4bc3c6ea317f11a69356b572323eedec0b9578571ced629a55d723aff36"
+    url "https://github.com/zagware/eng-team-reporter-dist/releases/download/v#{version}/eng-team-reporter-#{version}-macos-x64.tar.gz"
+    sha256 "PLACEHOLDER_X64_SHA256"
   end
 
   def install
