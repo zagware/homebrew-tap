@@ -1,15 +1,15 @@
 class EngTeamReporter < Formula
   desc "Generate engineering team activity reports from JIRA, GitHub, and Confluence"
   homepage "https://github.com/zagware/eng-team-reporter"
-  version "1.0.7"
+  version "1.0.8"
   license :cannot_represent
 
   if Hardware::CPU.arm?
     url "https://github.com/zagware/eng-team-reporter-dist/releases/download/v#{version}/eng-team-reporter-#{version}-macos-arm64.tar.gz"
-    sha256 "567a356536b393f2ce87f9f3966de585f9f9fe71d37694204c4851d4c29f31a0"
+    sha256 "5b1b63ccde3570876b4ecd214397502766263bbbeb14558b8b93c295d7c6b1e5"
   else
     url "https://github.com/zagware/eng-team-reporter-dist/releases/download/v#{version}/eng-team-reporter-#{version}-macos-x64.tar.gz"
-    sha256 "a1626ee779990573264488f09b4d4f339b24043beaff60fd563b521053bbfba8"
+    sha256 "2c4101a1c9d104191d22b01384c614c8bd8947d87d5e18d88fd7d86391f9d3a9"
   end
 
   def install
