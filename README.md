@@ -7,6 +7,7 @@ Homebrew formulae for [Zagware](https://github.com/zagware) tools.
 ```bash
 brew tap zagware/tap
 brew install eng-team-reporter
+brew install pgbrowser
 ```
 
 ## Available Formulae
@@ -14,3 +15,4 @@ brew install eng-team-reporter
 | Formula | Description |
 |---------|-------------|
 | `eng-team-reporter` | Generate engineering team activity reports from JIRA, GitHub, and Confluence |
+| `pgbrowser` | k9s inspired browser tool for Postgres Database clusters |
