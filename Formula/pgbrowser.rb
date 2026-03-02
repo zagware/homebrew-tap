@@ -5,21 +5,21 @@
 class Pgbrowser < Formula
   desc "k9s-style TUI for browsing PostgreSQL clusters"
   homepage "https://github.com/zagware/pgbrowser-dist"
-  version "0.2.0"
+  version "0.2.1"
   license "Proprietary"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/zagware/pgbrowser-dist/releases/download/v0.2.0/pgbrowser_darwin_amd64.tar.gz"
-      sha256 "4b45528764d0199a05c65421c425399ea86588e1e75a1d471b8ca9dbe1187643"
+      url "https://github.com/zagware/pgbrowser-dist/releases/download/v0.2.1/pgbrowser_darwin_amd64.tar.gz"
+      sha256 "4b580a236109fde8c59130aabada794ef4f7f7bd9c0ee43a7fca07a657fe247b"
 
       define_method(:install) do
         bin.install "pgbrowser"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/zagware/pgbrowser-dist/releases/download/v0.2.0/pgbrowser_darwin_arm64.tar.gz"
-      sha256 "b08f239eedf34495bdf7fffa5d3fe27c95d0629db4fea66f40166026ff2aa1b5"
+      url "https://github.com/zagware/pgbrowser-dist/releases/download/v0.2.1/pgbrowser_darwin_arm64.tar.gz"
+      sha256 "faf3a9ad228687e2dc85d441df4ca339d368deeaccffd7f922cac23a61ed7d1d"
 
       define_method(:install) do
         bin.install "pgbrowser"
@@ -29,15 +29,15 @@ class Pgbrowser < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/zagware/pgbrowser-dist/releases/download/v0.2.0/pgbrowser_linux_amd64.tar.gz"
-      sha256 "c4aced76a1ce0c68b306e494f39e3c834e6c28fb4f8314b9dba6ef83dade6cca"
+      url "https://github.com/zagware/pgbrowser-dist/releases/download/v0.2.1/pgbrowser_linux_amd64.tar.gz"
+      sha256 "bdaa60c9ca09675758f10e35d5d3e1155fcb3f46ca6d29cc7895b6472ebfe1ef"
       define_method(:install) do
         bin.install "pgbrowser"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/zagware/pgbrowser-dist/releases/download/v0.2.0/pgbrowser_linux_arm64.tar.gz"
-      sha256 "a9501910a9ec6e715a74fe22716be7671cee3af02ce0fcbaf89f7e042b5cbb17"
+      url "https://github.com/zagware/pgbrowser-dist/releases/download/v0.2.1/pgbrowser_linux_arm64.tar.gz"
+      sha256 "f8f0a0091b72b699ecce3e21a225fdfefa841f91098a442733ebca68c7ec2538"
       define_method(:install) do
         bin.install "pgbrowser"
       end
